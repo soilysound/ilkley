@@ -1,0 +1,30 @@
+{
+  "name": "ilkley",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "build-css; build-js",
+    "build-css": "node _build/build-css.js",
+    "build-js": "node _build/build-js.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soilysound/ilkley.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soilysound/ilkley/issues"
+  },
+  "homepage": "https://github.com/soilysound/ilkley#readme",
+  "devDependencies": {
+    "postcss-css-variables": "^0.11.0",
+    "autoprefixer": "^8.6.3",
+    "clean-css": "^4.1.11",
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.23",
+    "precss": "^3.1.2",
+    "uglify-js": "^3.4.2"
+  }
+}
