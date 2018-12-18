@@ -24,6 +24,11 @@
   white-space: nowrap
 }
 
+.site-nav__link[aria-current] {
+  font-weight: 600;
+  color: white;
+}
+
 @media all and (min-width: 768px){
 
   .site-nav {
@@ -39,6 +44,25 @@
   }
 }
 
+@keyframes sitenavclose {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+}
+
+@keyframes sitenavopen {
+  0% {
+    transform: translateX(-100%)
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @media all and (max-width: 767px){
   .site-nav {
     width: 250px;
@@ -47,12 +71,17 @@
     position: fixed;
     top: 0;
     left: 0;
-    transition: transform 0.33s;
-    transform: translateX(-100%);
+    animation: sitenavclose 0.33s;
+    animation-fill-mode: both
   }
 
-  .site-nav[data-expanded]{
+  .site-nav[data-expanded="false"]{
+    visibility: hidden
+  }
+
+  .site-nav[data-expanded="true"]{
     transform: translateX(0);
+    animation: sitenavopen 0.33s;
   }
 
   .site-nav__body {

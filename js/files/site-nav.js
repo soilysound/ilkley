@@ -39,6 +39,7 @@
 
     sitenavopen.setAttribute('aria-expanded', false);
     sitenavopen.setAttribute('aria-label', 'Show site navigation');
+    // sitenav.style.cssText = "transform: translateX(0)";
     sitenav.removeAttribute('data-expanded');
 
   }

@@ -1,5 +1,4 @@
 # Page List
 
-* Page 1 - Notes: 
-* Page 2 - Notes:
-* Page 3 - Notes:
+* [Index](https://soilysound.github.io/ilkley/index.html)
+* [Article](https://soilysound.github.io/ilkley/article.html)
