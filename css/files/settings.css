@@ -1,0 +1,27 @@
+
+:root {
+  /* GLOBAL FLEX VAL */
+  --vw: 1vw;
+
+  /* PALETTE */
+  --primary: #275d38;
+  --secondary: #f0b323;
+  --highlight: #f4f5f7;
+  --shade-1: #1f1f1f;
+  --shade-2: #151515;
+  --shade-3: #333333;
+  --shade-4: #666666;
+  --shade-5: #999999;
+  --shade-6: #e2e2e2;
+
+  /* STACKING */
+  --stack-1: 9;
+  --stack-2: 99;
+  --stack-3: 999;
+}
+
+@media all and (min-width: 1000px){
+  :root {
+    --vw: 10px
+  }
+}

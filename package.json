@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "build-css; build-js",
+    "build": "npm run build-css; npm run build-js",
     "build-css": "node _build/build-css.js",
     "build-js": "node _build/build-js.js"
   },

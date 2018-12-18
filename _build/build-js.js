@@ -2,7 +2,7 @@ const fs = require('fs');
 const UglifyJS = require("uglify-js");
 
 const files = [
-  "script1.js",
+  "site-nav.js",
   "script2.js"
 ];
 

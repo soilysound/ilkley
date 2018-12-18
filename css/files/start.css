@@ -5,16 +5,6 @@
   font-size: 100%;
 }
 
-:root {
-  --vw: 1vw
-}
-
-@media all and (min-width: 1000px){
-  :root {
-    --vw: 10px
-  }
-}
-
 html {
   font-size: calc(16px + (var(--vw)/2));
   font-family: sans-serif;

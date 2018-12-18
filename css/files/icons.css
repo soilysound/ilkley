@@ -1,0 +1,7 @@
+.icon {
+  width: calc((var(--vw) * 2) + 20px);
+  height: calc((var(--vw) * 2) + 20px);
+  border: 1px solid red;
+  position: relative;
+  display: inline-block
+}
