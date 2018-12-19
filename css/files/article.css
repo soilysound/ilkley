@@ -32,7 +32,7 @@
 }
 
 .article__body > *:not(.article__media) {
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin-bottom: 1.75em
 }
 

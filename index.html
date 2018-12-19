@@ -34,10 +34,17 @@
     <a href="#" class="site-nav__close wrapper" data-role="site-nav-close" aria-label="Close site navigation">
       <div class="icon" aria-hidden="true"></div>
     </a>
-    <ul class="site-nav__body wrapper">
+    <ul class="site-nav__body wrapper" data-role="site-nav-menu-scope">
       <li class="site-nav__item"><a href="#" class="site-nav__link" aria-current>Home</a></li>
-      <li class="site-nav__item"><a href="#" class="site-nav__link">Rides</a></li>
-      <li class="site-nav__item"><a href="#" class="site-nav__link">Racing</a></li>
+      <li class="site-nav__item">
+        <a href="#" class="site-nav__link" aria-expanded="false" aria-controls="site-nav-rides">Rides</a>
+        <div class="site-nav__menu" id="site-nav-rides" data-role="site-nav-menu">Rides menu</div>
+
+      </li>
+      <li class="site-nav__item">
+        <a href="#" class="site-nav__link" aria-expanded="false" aria-controls="site-nav-racing">Racing</a>
+        <div class="site-nav__menu" id="site-nav-racing" data-role="site-nav-menu">Races menu</div>
+      </li>
       <li class="site-nav__item"><a href="#" class="site-nav__link">Events</a></li>
       <li class="site-nav__item"><a href="#" class="site-nav__link">Youth</a></li>
       <li class="site-nav__item"><a href="#" class="site-nav__link">History</a></li>

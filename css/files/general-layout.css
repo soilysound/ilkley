@@ -1,7 +1,11 @@
+body {
+  min-height: 100vh;
+}
+
 .wrapper {
   width: 100%;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 calc(12px + (var(--vw) * 2))
+  padding: 0 calc(12px + (var(--vw) * 2));
 }
