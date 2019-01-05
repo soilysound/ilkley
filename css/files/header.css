@@ -25,7 +25,6 @@
 .header__mobile-nav-button {
   padding: 10px;
   display: inline-block;
-  border: 1px solid red;
   position: relative;
   left: -10px;
 }
@@ -44,9 +43,9 @@
   flex: 1;
 }
 
-.header__site-name {
-  text-transform: uppercase;
-  font-size: calc(16px + (var(--vw) * 2))
+.header__site-logo {
+  height: calc(12px + var(--vw) * 1.6);
+  width: auto
 }
 
 @media all and (min-width: 768px){

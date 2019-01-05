@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ilkley Cycling</title>
   <!-- dev -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <!-- prod 
   <link rel="stylesheet" href="css/styles-min.css">
@@ -20,11 +21,19 @@
       <div class="header__cell header__mobile-nav">
         <a href="#site-nav" class="header__mobile-nav-button" aria-controls="site-nav" aria-expanded="false" aria-label="Show site navigation"
           data-role="site-nav-open">
-          <div class="icon" aria-hidden="true"></div>
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 22 16">
+              <g fill="#FFF" fill-rule="evenodd">
+                <rect width="12" height="2" rx="1" />
+                <rect width="17" height="2" y="7" rx="1" />
+                <rect width="22" height="2" y="14" rx="1" />
+              </g>
+            </svg>
+          </div>
         </a>
       </div>
       <div class="header__cell header__title">
-        <p class="header__site-name">Ilkley CC</p>
+        <img class="header__site-logo" src="/img/ilkley-cc.svg" alt="Ilkley CC">
       </div>
       <div class="header__cell header__nav">nav</div>
     </div>
@@ -43,13 +52,13 @@
       </li>
       <li class="site-nav__item">
         <a href="#" class="site-nav__link" aria-expanded="false" aria-controls="site-nav-racing">Racing</a>
-        <div class="site-nav__menu" id="site-nav-racing" data-role="site-nav-menu">Races menu</div>
+        <div class="site-nav__menu" id="site-nav-racing" data-role="site-nav-menu">Racing menu</div>
       </li>
-      <li class="site-nav__item"><a href="#" class="site-nav__link">Events</a></li>
       <li class="site-nav__item"><a href="#" class="site-nav__link">Youth</a></li>
-      <li class="site-nav__item"><a href="#" class="site-nav__link">History</a></li>
-      <li class="site-nav__item"><a href="#" class="site-nav__link">The Kit Shop</a></li>
-      <li class="site-nav__item site-nav__item--more"><a href="#" class="site-nav__link">More</a></li>
+      <li class="site-nav__item"><a href="#" class="site-nav__link">Events</a></li>
+      <li class="site-nav__item"><a href="#" class="site-nav__link">White Rose Classic</a></li>
+      <li class="site-nav__item"><a href="#" class="site-nav__link">Kit Shop</a></li>
+      <!-- <li class="site-nav__item site-nav__item--more"><a href="#" class="site-nav__link">More</a></li> -->
     </ul>
   </nav>
 

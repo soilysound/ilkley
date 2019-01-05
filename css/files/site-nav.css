@@ -9,15 +9,17 @@
 .site-nav__body {
   display: flex;
   list-style: none;
+  justify-content: center
 }
 
 .site-nav__link {
   display: block;
-  font-size: 14px;
-  padding: 1em var(--vw);
+  font-size: 13px;
+  padding: 1.2em var(--vw);
   color: var(--shade-6);
   text-transform: uppercase;
-  white-space: nowrap
+  white-space: nowrap;
+  letter-spacing: 2px
 }
 
 .site-nav__link[aria-current] {
@@ -35,11 +37,15 @@
 }
 
 .site-nav__link[aria-expanded]:after {
-  content: "v";
-  font-size: 9px;
+  content: "";
+  height: 10px;
+  width: 10px;
   display: inline-block;
   margin-left: 5px;
-  vertical-align: middle
+  vertical-align: middle;
+  background: url(/img/icons/icon-down-arrow.svg);
+  background-size: 100%;
+  border
 }
 
 .site-nav__link[aria-expanded="true"]:after {
