@@ -46,7 +46,12 @@
 
 .header__site-logo {
   height: calc(12px + var(--vw) * 1.6);
-  width: auto
+  width: auto;
+  display: block
+}
+
+.header__site-logo-link {
+  display: block
 }
 
 .header .button:hover {

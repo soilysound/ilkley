@@ -129,10 +129,16 @@
   padding: 0.2em 1px;
 }
 
-.footer__list img {
+.footer__list-image-link[class] {
+  display: inline-block;
+  padding: 0;
   width: 25%;
   max-width: 120px;
   margin-right: 1em;
+}
+
+.footer__list img {
+  width: 100%;
 }
 
 .footer__input {
