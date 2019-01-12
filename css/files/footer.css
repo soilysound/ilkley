@@ -4,6 +4,14 @@
   font-size: 13px;
 }
 
+.footer a {
+  opacity: 0.9
+}
+
+.footer a:hover {
+  opacity: 1
+}
+
 .footer__body {
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +81,10 @@
   font-weight: 600
 }
 
+.footer__social-link:hover {
+  color: var(--highlight)
+}
+
 .footer__social-link > svg {
   fill: currentColor;
   width: 1.5em;
@@ -132,6 +144,12 @@
   padding: 0.5em 0;
   border-bottom: 2px solid var(--shade-5)
 }
+
+.footer__input:focus {
+  border-bottom: 2px solid var(--secondary)!important;
+  outline: 0
+}
+
 
 
 @media all and (max-width: 767px){

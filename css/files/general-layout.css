@@ -10,6 +10,10 @@ body {
   padding: 0 calc(12px + (var(--vw) * 2));
 }
 
+.wrapper--full-width {
+  max-width: 100%
+}
+
 .site-body {
   min-height: 60vh;
 }

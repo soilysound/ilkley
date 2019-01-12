@@ -49,6 +49,12 @@
   width: auto
 }
 
+.header .button:hover {
+  color: var(--primary);
+  background: var(--highlight);
+  border-color: currentColor
+}
+
 @media all and (max-width: 767px){
   .header {
     margin-bottom: calc(var(--vw) * 6)
