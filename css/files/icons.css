@@ -1,12 +1,16 @@
 .icon {
-  width: calc((var(--vw) * 2) + 19px);
-  height: calc((var(--vw) * 2) + 19px);
+  width: calc((var(--vw) * 2) + 15px);
+  height: calc((var(--vw) * 2) + 15px);
   position: relative;
-  display: inline-block
 }
 
 .icon > svg {
   position: absolute;
   width: 100%;
   height: 100%
+}
+
+.icon--touch {
+  /* provide a larger touch area */
+  margin: 10px;
 }

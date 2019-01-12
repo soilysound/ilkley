@@ -1,0 +1,175 @@
+.footer {
+  background-color: var(--shade-1);
+  color: var(--shade-5);
+  font-size: 13px;
+}
+
+.footer__body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer__col {
+  display: flex;
+  padding: calc(12px + var(--vw) * 2) 0;
+}
+
+.footer__col--1 {
+  justify-content: center;
+  border-bottom: 1px solid var(--shade-3);
+}
+
+.footer__col--1,
+.footer__col--5 {
+  width: 100%;
+  align-items: center;
+}
+
+.footer__col--2,
+.footer__col--3,
+.footer__col--4 {
+  width: 33.33%;
+  flex-direction: column
+}
+
+.footer__col--5 {
+  border-top: 1px solid var(--shade-3);
+  justify-content: flex-start
+}
+
+.footer__details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__details-copy {
+  margin-right: auto;
+  padding: 0.3em 0
+}
+
+.footer__details-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__details-links a {
+  display: block;
+  padding: 0.3em 0
+}
+
+.footer__details-links > li:not(:last-child) {
+  margin-right: 2em
+}
+
+.footer__social-link {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 calc(var(--vw) * 2);
+  display: inline-block;
+  padding: 0.2em 2em;
+  white-space: nowrap;
+  font-weight: 600
+}
+
+.footer__social-link > svg {
+  fill: currentColor;
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1.4em;
+  position: relative;
+  top: -1px
+}
+
+.footer__header {
+  color: var(--highlight);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.2em;
+  font-weight: 600
+}
+
+.footer__list,
+.footer__snippet {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.6
+}
+
+.footer__snippet {
+  margin-bottom: 1.5em;
+}
+
+.footer__list:not(:last-child){
+  margin-bottom: calc(var(--vw) * 3)
+}
+
+.footer__list > li {
+  margin-bottom: 0.5em;
+}
+
+.footer__list a {
+  display: block;
+  padding: 0.2em 1px;
+}
+
+.footer__list img {
+  width: 25%;
+  max-width: 120px;
+  margin-right: 1em;
+}
+
+.footer__input {
+  width: 100%;
+  font-family: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0.5em 0;
+  border-bottom: 2px solid var(--shade-5)
+}
+
+
+@media all and (max-width: 767px){
+  .footer {
+    padding: 0 12px;
+  }
+
+  .footer__col--2,
+  .footer__col--3,
+  .footer__col--4 {
+    width: 100%;
+    padding: 0
+  }
+
+  .footer__col--4 {
+    padding-bottom: calc(var(--vw) * 8)
+  }
+
+  .footer__col--5 {
+    flex-direction: column-reverse
+  }
+
+  .footer__list[class] {
+    margin: 0
+  }
+
+  .footer__header {
+    margin-top: calc(12px + var(--vw) * 4)
+  }
+
+  .footer__social-link span {
+    position: absolute;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  .footer__details-links {
+    width: 100%
+  }
+}

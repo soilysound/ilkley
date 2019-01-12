@@ -1,0 +1,24 @@
+.button-group {
+  display: flex;
+}
+
+.button {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: inherit;
+  padding: 0.5em 1em;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  margin: 0 var(--vw);
+  white-space: nowrap
+}
+
+.button:first-child {
+  margin-left: 0
+}
+
+.button:last-child {
+  margin-right: 0
+}

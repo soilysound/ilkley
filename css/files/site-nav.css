@@ -15,7 +15,7 @@
 .site-nav__link {
   display: block;
   font-size: 13px;
-  padding: 1.2em var(--vw);
+  padding: 1.2em calc(var(--vw) * 2);
   color: var(--shade-6);
   text-transform: uppercase;
   white-space: nowrap;
@@ -33,7 +33,7 @@
 }
 
 .site-nav__link[aria-expanded="true"] {
-  background: var(--shade-4)
+  background: var(--shade-3)
 }
 
 .site-nav__link[aria-expanded]:after {
@@ -45,7 +45,6 @@
   vertical-align: middle;
   background: url(../../img/icons/icon-down-arrow.svg);
   background-size: 100%;
-  border
 }
 
 .site-nav__link[aria-expanded="true"]:after {
@@ -55,6 +54,19 @@
 .site-nav__link[aria-expanded="true"] + 
 .site-nav__menu {
   display: block
+}
+
+.site-nav__menu {
+  list-style: none;
+  padding: var(--vw) 0;
+}
+
+.site-nav__menu-link {
+  display: block;
+  font-size: 14px;
+  padding: 0.8em calc(var(--vw) * 2) 1em;
+  letter-spacing: 1px;
+  opacity: 0.7;
 }
 
 @media all and (min-width: 768px){
@@ -86,8 +98,9 @@
 
   .site-nav__menu {
     position: absolute;
-    width: 200px;
-    background: var(--shade-4);
+    width: 248px;
+    max-width: 90vw;
+    background: var(--shade-3);
     top: 100%;
     left: 0;
   }
@@ -121,7 +134,9 @@
     top: 0;
     left: 0;
     animation: sitenavclose 0.33s;
-    animation-fill-mode: both
+    animation-fill-mode: both;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch
   }
 
   .site-nav[data-expanded="false"]{
@@ -145,9 +160,13 @@
     height: 10vw;
     min-height: 80px;
     max-height: 100px;
-    margin-bottom: calc(var(--vw) * 10);
+    margin-bottom: calc(var(--vw) * 8);
     display: flex;
     align-items: center
+  }
+
+  .site-nav__menu {
+    padding: 0 0 calc(var(--vw) * 4) calc(var(--vw) * 2)
   }
 
 }

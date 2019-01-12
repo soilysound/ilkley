@@ -19,18 +19,19 @@
 
 .header__mobile-nav {
   justify-content: flex-start;
-  flex: 1;
+  flex: 2;
 }
 
 .header__mobile-nav-button {
-  padding: 10px;
   display: inline-block;
   position: relative;
   left: -10px;
 }
 
-.header__mobile-nav-button > .icon {
-  display: block;
+.header__mobile-login-button {
+  display: inline-block;
+  position: relative;
+  left: 10px;
 }
 
 .header__title {
@@ -40,18 +41,12 @@
 
 .header__nav {
   justify-content: flex-end;
-  flex: 1;
+  flex: 2;
 }
 
 .header__site-logo {
   height: calc(12px + var(--vw) * 1.6);
   width: auto
-}
-
-@media all and (min-width: 768px){
-  .header__mobile-nav-button {
-    display: none;
-  }
 }
 
 @media all and (max-width: 767px){

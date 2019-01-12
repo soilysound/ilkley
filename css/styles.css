@@ -3,6 +3,11 @@
 @import "files/start.css";
 @import "files/general-layout.css";
 @import "files/header.css";
+@import "files/footer.css";
 @import "files/icons.css";
 @import "files/site-nav.css";
 @import "files/article.css";
+@import "files/buttons.css";
+
+
+@import "files/hide.css";

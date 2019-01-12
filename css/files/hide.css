@@ -1,0 +1,11 @@
+@media all and (min-width: 768px){
+  .hide--desktop {
+    display: none
+  }
+}
+
+@media all and (max-width: 767px){
+  .hide--mobile {
+    display: none
+  }  
+}
