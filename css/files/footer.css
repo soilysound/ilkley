@@ -5,11 +5,16 @@
 }
 
 .footer a {
-  opacity: 0.9
+  opacity: 0.9;
 }
 
 .footer a:hover {
-  opacity: 1
+  opacity: 1;
+  color: white
+}
+
+.footer a:focus {
+  background: var(--shade-3)
 }
 
 .footer__body {

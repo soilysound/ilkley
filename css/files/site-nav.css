@@ -1,6 +1,6 @@
 .site-nav {
   background-color: var(--shade-1);
-  color: var(--highlight);
+  color: white;
   position: relative;
   transform: translateX(0);
   will-change: transform;
@@ -11,7 +11,12 @@
 }
 
 .site-nav a:hover {
-  opacity: 1
+  opacity: 1;
+  color: white;
+}
+
+.site-nav a:focus {
+  background: var(--shade-3)
 }
 
 .site-nav__body {
@@ -24,7 +29,6 @@
   display: block;
   font-size: 13px;
   padding: 1.2em calc(var(--vw) * 2);
-  color: var(--shade-6);
   text-transform: uppercase;
   white-space: nowrap;
   letter-spacing: 2px;
@@ -38,10 +42,6 @@
 .site-nav__link[aria-expanded="false"] + 
 .site-nav__menu {
   display: none
-}
-
-.site-nav__link[aria-expanded="true"] {
-  background: var(--shade-3)
 }
 
 .site-nav__link[aria-expanded]:after {
@@ -98,6 +98,10 @@
 
   .site-nav__item--more {
     margin-left: auto;
+  }
+
+  .site-nav__link[aria-expanded="true"] {
+    background: var(--shade-3)
   }
 
   .site-nav__close {
