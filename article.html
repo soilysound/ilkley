@@ -18,9 +18,9 @@
   <header class="header" role="banner">
     <div class="header__body wrapper">
       <div class="header__cell header__mobile-nav">
-        <a href="#site-nav" class="header__mobile-nav-button" aria-controls="site-nav" aria-expanded="false" aria-label="Show site navigation"
-          data-role="site-nav-open">
-          <div class="icon" aria-hidden="true">
+        <a href="#site-nav" class="header__mobile-nav-button hide--desktop" aria-controls="site-nav" aria-expanded="false"
+          aria-label="Show site navigation" data-role="site-nav-open">
+          <div class="icon icon--touch" aria-hidden="true">
             <svg viewBox="0 0 22 16">
               <g fill="#FFF" fill-rule="evenodd">
                 <rect width="12" height="2" rx="1" />
@@ -30,38 +30,69 @@
             </svg>
           </div>
         </a>
+        <a href="#" class="button hide--mobile">Rides App</a>
       </div>
       <div class="header__cell header__title">
         <img class="header__site-logo" src="img/ilkley-cc.svg" alt="Ilkley CC">
       </div>
-      <div class="header__cell header__nav">nav</div>
+      <div class="header__cell header__nav">
+        <div class="button-group">
+          <a href="#" class="button hide--mobile">Member Login</a>
+          <a href="#" class="button hide--mobile">Join</a>
+        </div>
+        <a href="#" class="header__mobile-login-button hide--desktop" aria-controls="site-nav" aria-expanded="false"
+          aria-label="Show login navigation" data-role="site-nav-open">
+          <div class="icon icon--touch" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="#FFF" fill-rule="nonzero">
+              <path d="M12 11a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-1.579a3.421 3.421 0 1 0 0-6.842 3.421 3.421 0 0 0 0 6.842zM4.5 23h15v-6a2.5 2.5 0 0 0-2.5-2.5H7A2.5 2.5 0 0 0 4.5 17v6zM7 13h10a4 4 0 0 1 4 4v6H3v-6a4 4 0 0 1 4-4z" />
+            </svg>
+          </div>
+        </a>
+      </div>
     </div>
   </header>
 
   <nav class="site-nav" role="navigation" id="site-nav" data-role="site-nav" data-expanded="false">
     <a href="#" class="site-nav__close wrapper" data-role="site-nav-close" aria-label="Close site navigation">
-      <div class="icon" aria-hidden="true"></div>
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 612 612" fill="#fff" style="transform: scale(0.8)">
+          <path d="M612 36.004L576.521.603 306 270.608 35.478.603 0 36.004l270.522 270.007L0 575.997l35.478 35.4L306 341.411l270.521 269.986 35.479-35.4-270.541-269.986z" /></svg>
+      </div>
     </a>
     <ul class="site-nav__body wrapper" data-role="site-nav-menu-scope">
       <li class="site-nav__item"><a href="#" class="site-nav__link" aria-current>Home</a></li>
       <li class="site-nav__item">
-        <a href="#" class="site-nav__link" aria-expanded="false" aria-controls="site-nav-rides">Rides</a>
-        <div class="site-nav__menu" id="site-nav-rides" data-role="site-nav-menu">Rides menu</div>
+        <a href="#" class="site-nav__link" aria-expanded="false" aria-controls="site-nav-rides">Riding</a>
+        <ul class="site-nav__menu" id="site-nav-rides" data-role="site-nav-menu">
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Rides App</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Leaderboard</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">White Rose Classic</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Leaderboard</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Top Tips</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Ride Etiquette</a></li>
+        </ul>
 
       </li>
       <li class="site-nav__item">
-        <a href="#" class="site-nav__link" aria-expanded="false" aria-controls="site-nav-racing">Racing</a>
-        <div class="site-nav__menu" id="site-nav-racing" data-role="site-nav-menu">Races menu</div>
+        <a href="#" class="site-nav__link" aria-expanded="false" aria-controls="site-nav-racing">Membership</a>
+        <ul class="site-nav__menu" id="site-nav-racing" data-role="site-nav-menu">
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Member Login</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Why Join</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Sign Up</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Leaderboard</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">About Ilkley CC</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Club History</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Kit Shop</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Member Profiles</a></li>
+          <li class="site-nav__menu-item"><a href="#" class="site-nav__menu-link">Member Subscription Management</a></li>
+        </ul>
       </li>
-      <li class="site-nav__item"><a href="#" class="site-nav__link">Events</a></li>
-      <li class="site-nav__item"><a href="#" class="site-nav__link">Youth</a></li>
-      <li class="site-nav__item"><a href="#" class="site-nav__link">History</a></li>
-      <li class="site-nav__item"><a href="#" class="site-nav__link">The Kit Shop</a></li>
-      <li class="site-nav__item site-nav__item--more"><a href="#" class="site-nav__link">More</a></li>
+      <li class="site-nav__item"><a href="#" class="site-nav__link">Calendar</a></li>
+      <li class="site-nav__item"><a href="#" class="site-nav__link">Groups</a></li>
     </ul>
   </nav>
 
-  <div class="wrapper" role="main">
+  <div class="site-body wrapper" role="main">
     <div class="article">
 
       <div class="article__header article__wrapper">
@@ -130,6 +161,74 @@
     </div>
 
   </div>
+
+  <footer class="footer">
+    <div class="footer__body wrapper">
+      <div class="footer__col footer__col--1">
+        <a href="#" class="footer__social-link"><svg viewBox="0 0 18 15" aria-hidden="true">
+            <path fill-rule="evenodd" d="M18 1.776a7.242 7.242 0 0 1-2.121.596A3.784 3.784 0 0 0 17.503.277a7.296 7.296 0 0 1-2.345.919A3.648 3.648 0 0 0 12.462 0C10.422 0 8.77 1.696 8.77 3.787c0 .297.033.586.096.862-3.07-.157-5.79-1.665-7.612-3.956-.317.56-.5 1.21-.5 1.904a3.81 3.81 0 0 0 1.643 3.152 3.612 3.612 0 0 1-1.673-.474v.048c0 1.835 1.273 3.365 2.962 3.713a3.594 3.594 0 0 1-1.667.064c.47 1.505 1.834 2.6 3.45 2.63A7.294 7.294 0 0 1 0 13.3 10.27 10.27 0 0 0 5.66 15c6.794 0 10.508-5.77 10.508-10.774 0-.164-.004-.328-.01-.49A7.613 7.613 0 0 0 18 1.776" />
+          </svg>
+          <span>Twitter</span></a>
+
+        <a href="#" class="footer__social-link"><svg viewBox="0 0 18 18" aria-hidden="true">
+            <path d="M8.979 1.618c2.398 0 2.68.01 3.628.054.877.039 1.351.185 1.668.31.42.164.72.356 1.034.67.314.314.51.613.67 1.034.121.317.27.79.31 1.668.043.948.054 1.23.054 3.628 0 2.399-.011 2.68-.054 3.629-.04.877-.185 1.35-.31 1.668a2.78 2.78 0 0 1-.67 1.033c-.314.314-.613.51-1.034.67-.317.122-.791.271-1.668.31-.948.043-1.23.054-3.628.054-2.4 0-2.68-.01-3.629-.053-.877-.04-1.35-.186-1.668-.31a2.787 2.787 0 0 1-1.034-.67 2.743 2.743 0 0 1-.67-1.034c-.121-.317-.27-.791-.31-1.668-.043-.948-.053-1.23-.053-3.629s.01-2.68.053-3.628c.04-.877.185-1.351.31-1.668.164-.421.357-.72.67-1.034.314-.314.613-.51 1.034-.67.317-.121.791-.271 1.668-.31.948-.047 1.23-.054 3.629-.054zm0-1.618C6.54 0 6.234.01 5.275.053 4.32.096 3.668.25 3.097.47a4.377 4.377 0 0 0-1.59 1.038A4.454 4.454 0 0 0 .47 3.098c-.22.57-.374 1.222-.417 2.18C.011 6.235 0 6.542 0 8.979c0 2.439.01 2.745.053 3.704.043.955.197 1.608.417 2.181a4.389 4.389 0 0 0 1.038 1.59 4.454 4.454 0 0 0 1.59 1.037c.57.221 1.222.375 2.18.417.96.043 1.263.054 3.704.054 2.442 0 2.745-.01 3.704-.054.955-.042 1.607-.196 2.18-.417a4.377 4.377 0 0 0 1.59-1.037 4.454 4.454 0 0 0 1.038-1.59c.22-.57.374-1.222.417-2.181.043-.959.053-1.262.053-3.703 0-2.442-.01-2.745-.053-3.704-.043-.955-.196-1.607-.417-2.181a4.377 4.377 0 0 0-1.037-1.59 4.454 4.454 0 0 0-1.59-1.037c-.57-.221-1.223-.374-2.181-.417C11.723.01 11.416 0 8.979 0z" />
+            <path d="M8.982 4.37a4.613 4.613 0 0 0 0 9.224 4.615 4.615 0 0 0 4.612-4.612A4.615 4.615 0 0 0 8.982 4.37zm0 7.606a2.994 2.994 0 1 1 0-5.987 2.994 2.994 0 0 1 0 5.987z" />
+            <circle cx="13.776" cy="4.188" r="1.076" /></svg><span>Instagram</span></a>
+
+        <a href="#" class="footer__social-link"><svg viewBox="0 0 512 512" aria-hidden="true">
+            <path d="M448 0H64C28.704 0 0 28.704 0 64v384c0 35.296 28.704 64 64 64h192V336h-64v-80h64v-64c0-53.024 42.976-96 96-96h64v80h-32c-17.664 0-32-1.664-32 16v64h80l-32 80h-48v176h96c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z" /></svg><span>Facebook</span></a>
+      </div>
+      <div class="footer__col footer__col--2">
+        <h4 class="footer__header">Proud partners of</h4>
+        <ul class="footer__list">
+          <li><img src="img/logos/logo-british-cycling.svg" alt="British Cycling"></li>
+        </ul>
+        <h4 class="footer__header">Check us out on</h4>
+        <ul class="footer__list">
+          <li>
+            <img src="img/logos/logo-strava.svg" alt="Strava">
+            <img src="img/logos/logo-ride-with-gps.png" alt="Ride with GPS"></li>
+        </ul>
+
+      </div>
+      <div class="footer__col footer__col--3">
+        <h4 class="footer__header">About Ilkley CC</h4>
+        <ul class="footer__list">
+          <li>
+            <a href="#">Introduction to Riding with Ilkley CC</a>
+          </li>
+          <li>
+            <a href="#">History</a>
+          </li>
+          <li>
+            <a href="#">Club Rules & Etiquette</a>
+          </li>
+          <li>
+            <a href="#">Top Riding Tips</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="footer__col footer__col--4">
+        <h4 class="footer__header">Keep up with Ilkley CC</h4>
+        <p class="footer__snippet">
+          Join our mailing list for updates and exclusive member offers
+        </p>
+        <form action="" class="footer__form">
+          <input type="text" placeholder="Your Email" class="footer__input">
+        </form>
+      </div>
+
+      <div class="footer__col footer__col--5 footer__details">
+        <p class="footer__details-copy">© 2019 Ilkley Cycling Club. All Rights Reserved</p>
+        <ul class="footer__details-links">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Company Details</a></li>
+          <li><a href="#">Privacy & Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 
 <script src="js/scripts-min.js"></script>
