@@ -7,7 +7,7 @@
 }
 
 .site-nav a:not(.button) {
-  opacity: 0.9
+  opacity: 0.8
 }
 
 .site-nav a:hover {
@@ -37,6 +37,7 @@
 .site-nav__link[aria-current] {
   font-weight: 600;
   color: white;
+  opacity: 1!important
 }
 
 .site-nav__link[aria-expanded="false"] + 
