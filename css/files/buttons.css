@@ -23,3 +23,14 @@
 .button:last-child {
   margin-right: 0
 }
+
+.button svg {
+  fill: currentColor;
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 0.9em;
+  display: inline;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}

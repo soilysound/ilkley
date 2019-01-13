@@ -2,6 +2,7 @@
   background-color: var(--shade-1);
   color: var(--shade-5);
   font-size: 13px;
+  border-top: 2px solid var(--secondary)
 }
 
 .footer a {
@@ -146,19 +147,55 @@
   width: 100%;
 }
 
+.footer__list img:hover {
+  filter: brightness(1)
+}
+
+.footer__input-box {
+  position: relative;
+  height: 40px
+}
+
 .footer__input {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
   font-family: inherit;
   background: none;
   border: none;
-  color: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #fff;
   padding: 0.5em 0;
-  border-bottom: 2px solid var(--shade-5)
+  border-bottom: 2px solid var(--shade-5);
 }
 
 .footer__input:focus {
   border-bottom: 2px solid var(--secondary)!important;
-  outline: 0
+  outline: 0; 
+}
+
+.footer__input-button {
+  position: absolute;
+  height: 100%;
+  width: 2em;
+  right: 0;
+  top: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: 0;
+  color: inherit
+}
+
+.footer__input-button > .icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+.footer__input-button svg {
+  fill: currentColor
 }
 
 
@@ -172,15 +209,21 @@
   .footer__col--3,
   .footer__col--4 {
     width: 100%;
-    padding: 0
+    padding: 0;
+    order: 2
+  }
+
+  .footer__col--3 {
+    padding-bottom: calc(var(--vw) * 8);
   }
 
   .footer__col--4 {
-    padding-bottom: calc(var(--vw) * 8)
+    order: 1
   }
 
   .footer__col--5 {
-    flex-direction: column-reverse
+    flex-direction: column-reverse;
+    order: 2
   }
 
   .footer__list[class] {

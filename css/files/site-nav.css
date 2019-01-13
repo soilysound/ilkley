@@ -140,7 +140,7 @@
 
 @media all and (max-width: 767px){
   .site-nav {
-    width: 250px;
+    width: 300px;
     height: 100vh;
     z-index: var(--stack-2);
     position: fixed;
