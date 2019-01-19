@@ -14,6 +14,14 @@ body {
   max-width: 100%
 }
 
+.wrapper--narrow[class] {
+  max-width: 640px;
+} 
+
 .site-body {
   min-height: 60vh;
+}
+
+.block {
+  margin-bottom: calc(24px + var(--vw) * 4)
 }

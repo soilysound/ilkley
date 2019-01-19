@@ -34,3 +34,37 @@
   position: relative;
   top: -1px;
 }
+
+.button--t2 {
+  font-size: 13px;
+  background-color: var(--primary);
+  border: 0;
+  color: white;
+  padding: 0.5em 1.5em;
+}
+
+.button-link {
+  letter-spacing: 0.5px;
+  color: inherit;
+  position: relative;
+}
+
+.button-link:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: var(--secondary);
+  bottom: -0.05em;
+  left: 0;
+  transition: width 0.25s
+}
+
+.button-link--animate:after {
+  width: 10%;
+  min-width: 10px
+}
+
+.button-link:hover:after {
+  width: 100%;
+}

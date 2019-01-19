@@ -3,7 +3,8 @@ const UglifyJS = require("uglify-js");
 
 const files = [
   "site-nav.js",
-  "site-nav-menu.js"
+  "site-nav-menu.js",
+  "carousel.js"
 ];
 
 const code = {};
