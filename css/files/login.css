@@ -1,0 +1,120 @@
+.login--open {
+  overflow: hidden
+}
+
+.login {
+  position: fixed;
+  z-index: var(--stack-3);
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.33s;
+  overflow: auto;
+  font-size: 14px;
+}
+
+.login[aria-hidden]{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.login__body {
+  padding: calc(16px + var(--vw) * 2.4);
+  width: 540px;
+  max-width: 88vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+  border-radius: 5px;
+  position: relative
+}
+
+.login__header {
+  font-size: calc(22px + var(--vw));
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.login__input,
+.login__button {
+  font-size: inherit;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid var(--shade-6);
+  border-radius: 5px;
+  padding: 0.75em 0.5em;
+  text-align: center;
+  color: var(--shade-3);
+  font-weight: 200;
+  font-size: 16px;
+  margin-bottom: 0.5em;
+}
+
+.login__button {
+  background: var(--primary);
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding: 1em 0.5em;
+  border-radius: 5px; 
+  border: 0
+}
+
+.login__button[disabled] {
+  background: var(--shade-6)
+}
+
+.login__tools {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid var(--shade-6);
+  width: 100%;
+}
+
+.login__tools-remember input {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  background: var(--primary);
+  color: white;
+}
+
+.login__close {
+  position: absolute;
+  width: 1.7em;
+  height: 1.7em;
+  top: 1em;
+  right: 1em;
+}
+
+.login__close > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  fill: var(--shade-5);
+  pointer-events: none
+}

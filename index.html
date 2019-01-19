@@ -42,14 +42,15 @@
       </div>
       <div class="header__cell header__nav">
         <div class="button-group">
-          <a href="#" class="button hide--mobile"><svg viewBox="0 0 24 24" fill-rule="nonzero" aria-hidden="true">
+          <a href="#" class="button hide--mobile" data-role="login-link"><svg viewBox="0 0 24 24" fill-rule="nonzero"
+              aria-hidden="true">
               <path d="M12 11a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-1.579a3.421 3.421 0 1 0 0-6.842 3.421 3.421 0 0 0 0 6.842zM4.5 23h15v-6a2.5 2.5 0 0 0-2.5-2.5H7A2.5 2.5 0 0 0 4.5 17v6zM7 13h10a4 4 0 0 1 4 4v6H3v-6a4 4 0 0 1 4-4z" />
             </svg>Member Login</a>
           <a href="#" class="button hide--mobile">Join</a>
         </div>
         <a href="#" class="header__mobile-login-button hide--desktop" aria-controls="site-nav" aria-expanded="false"
           aria-label="Show login navigation" data-role="site-nav-open">
-          <div class="icon icon--touch" aria-hidden="true">
+          <div class="icon icon--touch" aria-hidden="true" data-role="login-link">
             <svg viewBox="0 0 24 24" fill="#FFF" fill-rule="nonzero">
               <path d="M12 11a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-1.579a3.421 3.421 0 1 0 0-6.842 3.421 3.421 0 0 0 0 6.842zM4.5 23h15v-6a2.5 2.5 0 0 0-2.5-2.5H7A2.5 2.5 0 0 0 4.5 17v6zM7 13h10a4 4 0 0 1 4 4v6H3v-6a4 4 0 0 1 4-4z" />
             </svg>
@@ -415,6 +416,31 @@
       </div>
     </div>
   </footer>
+
+  <div class="login" aria-hidden="true" data-role="login-box">
+    <div class="login__body" data-role="login-body">
+      <a href="#" class="login__close" data-role="login-close">
+        <svg viewBox="0 0 612 612" fill="#fff" style="transform: scale(0.8)">
+          <path d="M612 36.004L576.521.603 306 270.608 35.478.603 0 36.004l270.522 270.007L0 575.997l35.478 35.4L306 341.411l270.521 269.986 35.479-35.4-270.541-269.986z"></path>
+        </svg>
+      </a>
+      <h4 class="login__header">Member Login</h4>
+      <form action="#" class="login__form" data-role="login-form">
+        <input type="text" class="login__input" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="a valid email address" required>
+        <input type="password" class="login__input" placeholder="password" pattern=".{6,}" title="6 or more characters"
+          required>
+        <button type="submit" class="login__button" disabled data-role="login-button">Login</button>
+      </form>
+      <div class="login__tools">
+        <a href="#" class="login__tools-link button-link button-link--animate">Forgot password</a>
+        <label class="login__tools-remember"><input type="checkbox" name="remember" id="">Remember me</label>
+      </div>
+      <div class="login__links">
+        <a href="#" class="login__links-item button-link button-link--animate">Not a member? Join now</a>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="js/scripts-min.js?v=5"></script>
