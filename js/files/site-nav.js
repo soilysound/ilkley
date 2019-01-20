@@ -4,28 +4,28 @@
   var sitenavopen = document.querySelector('[data-role="site-nav-open"]');
   var sitenavclose = document.querySelector('[data-role="site-nav-close"]');
 
-  sitenavopen.addEventListener('click', function (event) {
+  if (sitenavopen) {
+    sitenavopen.addEventListener('click', function (event) {
+      event.preventDefault();
+      var isopen = sitenavopen.getAttribute('aria-expanded') === 'true';
+      isopen ? closenav() : opennav();
+    });
+  }
 
-    event.preventDefault();
-    var isopen = sitenavopen.getAttribute('aria-expanded') === 'true';
-    isopen ? closenav() : opennav();
-
-  });
-
-  sitenavclose.addEventListener('click', function (event) {
-
-    event.preventDefault();
-    closenav();
-
-  });
-
-  document.body.addEventListener('click', function (event) {
-
-    if (!sitenav.contains(event.target) && !sitenavopen.contains(event.target)) {
+  if (sitenavclose) {
+    sitenavclose.addEventListener('click', function (event) {
+      event.preventDefault();
       closenav();
-    }
+    });
+  }
 
-  })
+  if (sitenav) {
+    document.body.addEventListener('click', function (event) {
+      if (!sitenav.contains(event.target) && !sitenavopen.contains(event.target)) {
+        closenav();
+      }
+    })
+  }
 
   function opennav() {
 

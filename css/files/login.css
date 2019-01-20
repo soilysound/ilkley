@@ -118,3 +118,69 @@
   fill: var(--shade-5);
   pointer-events: none
 }
+
+.logged-in-settings {
+  border: 0;
+  position: relative;
+}
+
+.logged-in-settings__button[class] {
+  border: 0;
+  color: white!important;
+  background: none!important
+}
+
+.logged-in-settings__panel {
+  padding: calc(16px + var(--vw) * 0.8);
+  font-size: 16px;
+  background: white;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 340px;
+  max-width: 90vw;
+}
+
+.logged-in-settings__panel[aria-hidden="true"] {
+  display: none;
+}
+
+.logged-in-settings__panel-user {
+  color: var(--shade-1);
+  display: flex;
+  border-bottom: 1px solid var(--shade-6);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.logged-in-settings__panel-user-details {
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.logged-in-settings__panel-user-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 3px
+}
+
+.logged-in-settings__panel-user-name {
+  font-weight: 600;
+  display: block;
+}
+
+.logged-in-settings__panel-user-email {
+  font-size: 12px;
+  color: var(--shade-4)
+}
+
+.logged-in-settings__panel-links {
+  color: var(--primary);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}

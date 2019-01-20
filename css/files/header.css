@@ -54,7 +54,7 @@
   display: block
 }
 
-.header .button:hover {
+.login-settings .button:hover {
   color: var(--primary);
   background: var(--highlight);
   border-color: currentColor

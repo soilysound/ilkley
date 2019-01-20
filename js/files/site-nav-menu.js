@@ -4,6 +4,10 @@
   var menus = document.querySelectorAll('[data-role="site-nav-menu"]');
   var links = [];
 
+  if (!scope || !menus) {
+    return;
+  };
+
   menus.forEach(function (menu) {
     links.push(menu.previousElementSibling);
   });

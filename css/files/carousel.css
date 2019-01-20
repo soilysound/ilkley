@@ -10,21 +10,25 @@
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;
   padding-bottom: 17px;
+  scroll-behavior: smooth;
 }
 
 .carousel__rail::-webkit-scrollbar { 
   width: 0 !important
 }
 
+.carousel__item--placeholder[class] {
+  width: var(--offset);
+}
+
 .carousel__item {
-  min-width: 300px;
-  width: 600px;
-  max-width: 40vw;
+  max-width: 580px;
+  width: 80vw;
   display: inline-block;
-  scroll-snap-align: start;
-  margin-right: calc(var(--vw) * 2.2);
+  scroll-snap-align: center;
+  padding: 0 calc(var(--vw) * 1.1);
   scroll-behavior: smooth;
-  white-space: normal
+  white-space: normal;
 }
 
 .carousel__item:last-child {
@@ -35,15 +39,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--vw) 0
 }
 
 .carousel__dots-item {
   display: block;
-  border-radius: 50%;
-  width: 10px;
-  background: var(--shade-5);
-  margin: 0 6px
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .carousel__dots-item:only-child {
@@ -53,5 +57,12 @@
 .carousel__dots-item:after {
   content: "";
   display: block;
-  padding-bottom: 100%;
+  background: var(--shade-5);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.carousel__dots-item[data-active="true"]:after {
+  background: var(--shade-1)
 }

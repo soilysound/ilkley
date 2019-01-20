@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ilkley Cycling</title>
+  <!-- dev -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- prod 
+  <link rel="stylesheet" href="css/styles-min.css">
+  -->
+
+</head>
+
+<body>
+  <header class="header" role="banner">
+    <div class="header__body wrapper wrapper--full-width">
+      <div class="header__cell header__mobile-nav">
+        <a href="#site-nav" class="header__mobile-nav-button hide--desktop" aria-controls="site-nav" aria-expanded="false"
+          aria-label="Show site navigation" data-role="site-nav-open">
+          <div class="icon icon--touch" aria-hidden="true">
+            <svg viewBox="0 0 22 16">
+              <g fill="#FFF" fill-rule="evenodd">
+                <rect width="12" height="2" rx="1" />
+                <rect width="17" height="2" y="7" rx="1" />
+                <rect width="22" height="2" y="14" rx="1" />
+              </g>
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="button hide--mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 16" style="transform: scale(1.4)">
+            <path d="M12.346 10.63l-1.713-6.192h6.855l-5.142 6.191zM9.862 5.004l1.67 6.04-5.366-.91 3.696-5.13zm9.858 2.57l-1.324-4.286-.034-.445 1.795-.414.237.332a.158.158 0 0 1 .029.127l-.093.417a.359.359 0 0 1-.125.197l-.707.436.464.776.727-.449a1.269 1.269 0 0 0 .512-.76l.094-.418a1.08 1.08 0 0 0-.178-.86l-.013-.018.134-.075a.443.443 0 0 0 .113-.09l.556-.616-.66-.614-.506.561-.255.144a.563.563 0 0 0-.31-.026l-2.202.508-.569.044.104 1.364a.469.469 0 0 0 .019.102l.005.018h-7.152l-.61-2.172c.294.009.582.016.758.016.09.009.422.12.711.24a.447.447 0 0 0 .583-.25.457.457 0 0 0-.246-.591c-.276-.115-.779-.306-1.038-.306-.229 0-.624-.013-.983-.024C9.346.436 9.147.43 9 .427 8.772.42 8.36.217 8.14.073a.444.444 0 0 0-.619.134.458.458 0 0 0 .132.628c.057.038.46.296.899.425l.325.183.677 2.45-4.539 6.302a.46.46 0 0 0-.053.44.45.45 0 0 0 .34.276l6.721 1.138.006-.035c.007.001.013.005.02.007a.439.439 0 0 0 .436-.151l5.557-6.691.83 2.683c.6 1.724 2.134 2.914 2.199 2.963l.538-.725c-.013-.01-1.382-1.072-1.89-2.526z" />
+            <path d="M21.362 15.882c-.06 0-.12 0-.182-.003a5.483 5.483 0 0 1-5.295-5.294 5.43 5.43 0 0 1 1.602-4.052 5.42 5.42 0 0 1 4.051-1.6 5.483 5.483 0 0 1 5.295 5.294 5.428 5.428 0 0 1-1.601 4.051 5.423 5.423 0 0 1-3.87 1.604zm-4.57-5.326a4.574 4.574 0 0 0 4.418 4.416 4.536 4.536 0 0 0 3.38-1.335 4.53 4.53 0 0 0 1.336-3.38 4.574 4.574 0 0 0-4.417-4.417 4.521 4.521 0 0 0-3.38 1.336 4.527 4.527 0 0 0-1.336 3.38zM5.48 15.882c-.06 0-.121 0-.182-.003a5.483 5.483 0 0 1-5.295-5.294 5.428 5.428 0 0 1 1.601-4.052 5.423 5.423 0 0 1 4.052-1.6 5.483 5.483 0 0 1 5.294 5.294 5.428 5.428 0 0 1-1.6 4.051 5.424 5.424 0 0 1-3.87 1.604zM.91 10.556a4.574 4.574 0 0 0 4.417 4.416 4.54 4.54 0 0 0 3.38-1.335 4.53 4.53 0 0 0 1.336-3.38A4.574 4.574 0 0 0 5.627 5.84a4.527 4.527 0 0 0-3.38 1.336 4.53 4.53 0 0 0-1.337 3.38z" />
+          </svg>
+          Rides App</a>
+      </div>
+      <div class="header__cell header__title">
+        <a href="/" class="header__site-logo-link"><img class="header__site-logo" src="img/ilkley-cc.svg" alt="Ilkley CC"></a>
+      </div>
+      <div class="header__cell header__nav">
+        <div class="button-group logged-in-settings" data-role="logged-in-settings">
+          <a href="#logged-in-panel" class="button logged-in-settings__button" data-role="logged-in-link" aria-expanded="false"
+            aria-controls="logged-in-panel"><svg viewBox="0 0 24 24" fill-rule="nonzero">
+              <path d="M12 11a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-1.579a3.421 3.421 0 1 0 0-6.842 3.421 3.421 0 0 0 0 6.842zM4.5 23h15v-6a2.5 2.5 0 0 0-2.5-2.5H7A2.5 2.5 0 0 0 4.5 17v6zM7 13h10a4 4 0 0 1 4 4v6H3v-6a4 4 0 0 1 4-4z" />
+            </svg>Bradley</a>
+
+          <div class="logged-in-settings__panel" aria-hidden="true" id="logged-in-panel" data-role="logged-in-panel">
+            <div class="logged-in-settings__panel-user">
+              <img src="https://via.placeholder.com/60x60" alt="alt text" aria-hidden="true" class="logged-in-settings__panel-user-pic">
+              <p class="logged-in-settings__panel-user-details">
+                <strong class="logged-in-settings__panel-user-name">Bradley Wiggins</strong>
+                <span class="logged-in-settings__panel-user-email">bradley.wiggins@email.com </span>
+              </p>
+
+            </div>
+            <div class="logged-in-settings__panel-links">
+              <a href="#" class="button-link button-link--animate">Sign out</a>
+              <a href="#" class="button button--t2">View profile</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+</body>
+
+<script src="js/scripts-min.js?v=5"></script>
+
+</html>

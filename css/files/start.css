@@ -9,6 +9,7 @@ html {
   font-size: calc(16px + (var(--vw)/2));
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
+  color: var(--shade-1);
   line-height: 1.5;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
