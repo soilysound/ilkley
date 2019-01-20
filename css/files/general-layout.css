@@ -23,5 +23,5 @@ body {
 }
 
 .block {
-  margin-bottom: calc(24px + var(--vw) * 4)
+  margin-bottom: calc(20px + var(--vw) * 3.9)
 }

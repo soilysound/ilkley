@@ -127,7 +127,9 @@
 .logged-in-settings__button[class] {
   border: 0;
   color: white!important;
-  background: none!important
+  background: none!important;
+  text-transform: none;
+  font-size: 14px
 }
 
 .logged-in-settings__panel {

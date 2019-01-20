@@ -7,7 +7,7 @@
   var loginbutton = document.querySelector('[data-role="login-button"]');
 
   var loggedinsettings = document.querySelector('[data-role="logged-in-settings"]');
-  var loggedinlink = document.querySelector('[data-role="logged-in-link"]');
+  var loggedinlink = document.querySelectorAll('[data-role="logged-in-link"]');
   var loggedinpanel = document.querySelector('[data-role="logged-in-panel"]');
 
   if (loginlink) {
@@ -57,18 +57,21 @@
   }
 
   if (loggedinlink && loggedinpanel) {
-    loggedinlink.onclick = function (event) {
-      event.preventDefault();
-      var expanded = loggedinlink.getAttribute('aria-expanded') === 'true';
+    loggedinlink.forEach(function (item) {
+      item.onclick = function (event) {
+        event.preventDefault();
+        var expanded = item.getAttribute('aria-expanded') === 'true';
 
-      if (expanded) {
-        closeloggedin()
+        if (expanded) {
+          closeloggedin()
+        }
+
+        else {
+          openloggedin();
+        }
       }
 
-      else {
-        openloggedin();
-      }
-    }
+    });
 
     document.body.addEventListener('click', function (event) {
       if (!loggedinsettings.contains(event.target)) {
@@ -86,12 +89,16 @@
   }
 
   function openloggedin() {
-    loggedinlink.setAttribute('aria-expanded', 'true');
+    loggedinlink.forEach(function (item) {
+      item.setAttribute('aria-expanded', 'true');
+    });
     loggedinpanel.setAttribute('aria-hidden', 'false');
   }
 
   function closeloggedin() {
-    loggedinlink.setAttribute('aria-expanded', 'false');
+    loggedinlink.forEach(function (item) {
+      item.setAttribute('aria-expanded', 'false');
+    });
     loggedinpanel.setAttribute('aria-hidden', 'true');
   }
 

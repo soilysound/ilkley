@@ -42,10 +42,23 @@
       </div>
       <div class="header__cell header__nav">
         <div class="button-group logged-in-settings" data-role="logged-in-settings">
-          <a href="#logged-in-panel" class="button logged-in-settings__button" data-role="logged-in-link" aria-expanded="false"
-            aria-controls="logged-in-panel"><svg viewBox="0 0 24 24" fill-rule="nonzero">
-              <path d="M12 11a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-1.579a3.421 3.421 0 1 0 0-6.842 3.421 3.421 0 0 0 0 6.842zM4.5 23h15v-6a2.5 2.5 0 0 0-2.5-2.5H7A2.5 2.5 0 0 0 4.5 17v6zM7 13h10a4 4 0 0 1 4 4v6H3v-6a4 4 0 0 1 4-4z" />
+          <a href="#logged-in-panel" class="button logged-in-settings__button  hide--mobile" data-role="logged-in-link"
+            aria-expanded="false" aria-controls="logged-in-panel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g fill="#FFF" fill-rule="nonzero">
+                <path d="M12 11a5 5 0 1 1 0-10 5 5 0 0 1 0 10zM7 13h10a4 4 0 0 1 4 4v6H3v-6a4 4 0 0 1 4-4z" />
+              </g>
             </svg>Bradley</a>
+
+          <a href="#" class="header__mobile-login-button hide--desktop" aria-expanded="false" aria-controls="logged-in-panel"
+            data-role="logged-in-link">
+            <div class="icon icon--touch" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g fill="#FFF" fill-rule="nonzero">
+                  <path d="M12 11a5 5 0 1 1 0-10 5 5 0 0 1 0 10zM7 13h10a4 4 0 0 1 4 4v6H3v-6a4 4 0 0 1 4-4z" />
+                </g>
+              </svg>
+            </div>
+          </a>
 
           <div class="logged-in-settings__panel" aria-hidden="true" id="logged-in-panel" data-role="logged-in-panel">
             <div class="logged-in-settings__panel-user">
