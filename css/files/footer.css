@@ -201,10 +201,7 @@
 
 
 @media all and (max-width: 767px){
-  .footer {
-    padding: 0 12px;
-  }
-
+ 
   .footer__col--2,
   .footer__col--3,
   .footer__col--4 {
