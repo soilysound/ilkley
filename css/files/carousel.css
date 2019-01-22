@@ -12,7 +12,7 @@
 .carousel__wrap > .carousel {
   margin-bottom: calc(var(--vw) * 1);
   padding-bottom: calc(var(--vw) * 3);
-  border-bottom: 1px solid rgba(0,0,0,0.2)
+  border-bottom: 1px solid rgba(0,0,0,0.05)
 }
 
 .carousel__rail {
