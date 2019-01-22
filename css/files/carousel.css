@@ -1,4 +1,18 @@
-.carousel {
+.carousel__wrap {
+  background: url(/img/design/img-carousel-bg.svg);
+  background-size: cover;
+  padding: calc(var(--vw)) 0 calc(var(--vw) * 1.6);
+  color: var(--primary)
+}
+
+.carousel__nav {
+  background: #dbe1ed;
+}
+
+.carousel__wrap > .carousel {
+  margin-bottom: calc(var(--vw) * 1);
+  padding-bottom: calc(var(--vw) * 3);
+  border-bottom: 1px solid rgba(0,0,0,0.2)
 }
 
 .carousel__rail {

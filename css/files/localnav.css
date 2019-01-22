@@ -1,0 +1,42 @@
+.localnav {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x none;
+}
+
+.localnav::-webkit-scrollbar { 
+  width: 0 !important
+}
+
+.localnav__items[class] {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 1px;
+  width: min-content;
+  scroll-snap-align: start
+}
+
+.localnav__item:not(:last-child) {
+  margin-right: calc(var(--vw) * 6)
+}
+
+.localnav__link {
+  display: block;
+  font-size: 14px;
+  padding: 1.1em 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  font-weight: 500
+}
+
+.localnav__link span {
+  display: block;
+  padding: 0.1em 0
+}
