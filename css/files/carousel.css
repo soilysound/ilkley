@@ -1,5 +1,5 @@
 .carousel__wrap {
-  background: url(/img/design/img-carousel-bg.svg);
+  background: url(../../img/design/img-carousel-bg.svg);
   background-size: cover;
   padding: calc(var(--vw)) 0 calc(var(--vw) * 1.6);
   color: var(--primary)
