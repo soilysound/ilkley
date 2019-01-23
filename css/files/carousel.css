@@ -45,6 +45,12 @@
   white-space: normal;
 }
 
+@supports(scroll-behavior: smooth){
+  .carousel__item {
+    /* scroll-snap-align: center; */
+  }
+}
+
 .carousel__item:last-child {
   margin-right: 0;
 }
