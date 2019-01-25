@@ -25,6 +25,7 @@
   scrollbar-width: none;
   padding-bottom: 15px;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch
 }
 
 .carousel__rail::-webkit-scrollbar { 

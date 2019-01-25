@@ -17,4 +17,7 @@
 @import "files/feature-promo.css";
 @import "files/login.css";
 @import "files/localnav.css";
+@import "files/join.css";
+
+/* include this file last */
 @import "files/skin.css";

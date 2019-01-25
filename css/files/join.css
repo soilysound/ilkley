@@ -1,0 +1,149 @@
+
+
+.join__step-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 1;
+  color: inherit;
+  padding: calc(1em + var(--vw)) 0.5em;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--shade-6);
+  border-radius: 5px;
+  background: white;
+  margin-bottom: calc(4px + var(--vw) * 0.7)
+}
+
+/* active */
+.join__step[data-active]
+.join__step-header {
+  background: var(--shade-2);
+  color: white
+}
+
+.join__step-body {
+  margin-bottom: calc(10px + var(--vw));
+  text-align: center;
+}
+
+.join__step[data-complete]
+.join__step-header {
+  background: var(--shade-2);
+  color: var(--shade-5);
+  cursor: pointer
+}
+
+.join__step-body {
+  background: white;
+  border-radius: 5px;
+  padding: calc(18px + var(--vw) * 2)
+}
+
+.join__step-body > *:not(:last-child) {
+  margin-bottom: calc(12px + var(--vw) * 2);
+}
+
+.join__step[aria-hidden]
+.join__step-body {
+  display: none;
+}
+
+.join__step-sub-header {
+  font-weight: 400;
+  font-size: calc(14px + var(--vw) * 0.5);
+}
+
+.join__step-options {
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid var(--shade-6)
+}
+
+.join__step-options-col {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  background: white;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  padding: calc(18px + var(--vw));
+  align-items: center;
+  line-height: 1;
+  position: relative;
+}
+
+.join__step-options-radio {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: 0;
+  cursor: pointer;
+}
+
+.join__step-options-radio:focus {
+  outline: 0;
+}
+
+.join__step-options-radio:checked {
+  background: var(--primary)
+}
+
+.join__step-options-radio:checked ~ * {
+  color: white;
+}
+
+.join__step-options-col:first-child {
+  border-right: 1px solid var(--shade-6)
+}
+
+.join__step-options-col > span {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 0.3em;
+  position: relative;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.join__step-options-col > strong {
+  font-size: calc(22px + var(--vw) * 2);
+  font-weight: 500;
+  position: relative;
+  pointer-events: none;
+  z-index: 2
+}
+
+.join__step-next-button {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  background: var(--primary);
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  line-height: 1;
+  padding: calc(8px + var(--vw) * 1.3);
+}
+
+.join__step-next-button[disabled] {
+  background: var(--shade-6);
+  pointer-events: none;
+  cursor: default;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ilkley Cycling</title>
+  <!-- dev -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- prod 
+  <link rel="stylesheet" href="css/styles-min.css">
+  -->
+
+</head>
+
+<body>
+  <div class="join wrapper wrapper--narrow">
+    <form action="" class="join__form">
+      <div class="join__step" data-role="join-step" data-active id="join-step-1">
+        <h3 class="join__step-header" data-role="join-step-header">Membership</h3>
+        <div class="join__step-body">
+          <h4 class="join__step-sub-header">Please choose a membership option</h4>
+          <div class="join__step-options">
+            <div class="join__step-options-col">
+              <input type="radio" name="membership" value="individual" class="join__step-options-radio">
+              <span>Individual</span>
+              <strong>£15</strong>
+            </div>
+            <div class="join__step-options-col">
+              <input type="radio" name="membership" value="family" class="join__step-options-radio">
+              <span>Family</span>
+              <strong>£20</strong>
+            </div>
+          </div>
+          <a href="#" class="button-link">Find out more about memberships and benefits</a>
+          <a href="#join-step-2" class="join__step-next-button" data-role="join-step-next">Next</a>
+        </div>
+      </div>
+
+      <div class="join__step" data-role="join-step" aria-hidden="true" id="join-step-2">
+        <h3 class="join__step-header" data-role="join-step-header">Personal details</h3>
+        <div class="join__step-body">
+          <a href="#join-step-3" class="join__step-next-button" data-role="join-step-next">Next</a>
+        </div>
+      </div>
+
+      <div class="join__step" data-role="join-step" aria-hidden="true" id="join-step-3">
+        <h3 class="join__step-header" data-role="join-step-header">Address</h3>
+        <div class="join__step-body">
+          <a href="#join-step-4" class="join__step-next-button" data-role="join-step-next">Next</a>
+        </div>
+      </div>
+      <div class="join__step" data-role="join-step" aria-hidden="true" id="join-step-4">
+        <h3 class="join__step-header" data-role="join-step-header">Payment</h3>
+        <div class="join__step-body" aria-hidden="true">
+          <button type="submit" class="join__step-next-button" data-role="join-submit" disabled>Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <form action="">
+    <fieldset>
+      <input type="text" required minlength="2" pattern=".{6,}">
+      <button type="submit">submit</button>
+    </fieldset>
+    <fieldset>
+      <input type="text" required minlength="2" pattern=".{6,}">
+      <button type="submit">submit</button>
+    </fieldset>
+  </form>
+
+  <script>
+    var fieldset = document.querySelectorAll('fieldset');
+    fieldset.forEach(function (item) {
+      item.oninput = function () {
+        console.log(item.checkValidity())
+      }
+    })
+  </script>
+
+
+</body>
+
+<script src="js/scripts-min.js?v=5"></script>
+
+</html>

@@ -5,7 +5,8 @@ const files = [
   "site-nav.js",
   "site-nav-menu.js",
   "carousel.js",
-  "login.js"
+  "login.js",
+  "join.js"
 ];
 
 const code = {};
