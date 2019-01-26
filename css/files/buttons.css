@@ -49,18 +49,7 @@
   position: relative;
 }
 
-.button-link span {
-  background-image: linear-gradient(transparent calc(100% - 1px), var(--secondary) 1px);
-  background-repeat: no-repeat;
-  background-size: 10px 100%;
-  transition: background-size 0.25s
-}
-
-.button-link:hover span {
-  background-size: 100% 100%
-}
-
-/* .button-link:after {
+.button-link:not(.button-link--multiline):after {
   content: "";
   position: absolute;
   height: 1px;
@@ -69,7 +58,7 @@
   bottom: -0.05em;
   left: 0;
   transition: width 0.25s
-} */
+}
 
 .button-link--animate:after {
   width: 10%;
@@ -78,4 +67,15 @@
 
 .button-link:hover:after {
   width: 100%;
+}
+
+.button-link--multiline span {
+  background-image: linear-gradient(transparent calc(100% - 1px), var(--secondary) 1px);
+  background-repeat: no-repeat;
+  background-size: 10px 100%;
+  transition: background-size 0.25s
+}
+
+.button-link--multiline:hover span {
+  background-size: 100% 100%
 }
