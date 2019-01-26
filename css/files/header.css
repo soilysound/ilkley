@@ -45,7 +45,7 @@
 }
 
 .header__site-logo {
-  height: calc(12px + var(--vw) * 1.6);
+  height: calc(23px + var(--vw) * 2.5);
   width: auto;
   display: block
 }
@@ -58,10 +58,4 @@
   color: var(--primary);
   background: var(--highlight);
   border-color: currentColor
-}
-
-@media all and (max-width: 767px){
-  .header {
-    margin-bottom: calc(var(--vw) * 6)
-  }
 }

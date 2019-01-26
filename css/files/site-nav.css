@@ -81,10 +81,6 @@
 
 @media all and (min-width: 768px){
 
-  .site-nav {
-    margin-bottom: calc(var(--vw) * 6)
-  }
-
   .site-nav__item {
     position: relative;
     margin-right: calc(var(--vw) * 1.5);

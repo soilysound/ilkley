@@ -20,6 +20,8 @@ body {
 
 .site-body {
   min-height: 60vh;
+  padding-top: calc(var(--vw) * 5);
+  margin-bottom: calc(var(--vw) * 7)
 }
 
 .block {

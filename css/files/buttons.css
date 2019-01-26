@@ -49,7 +49,18 @@
   position: relative;
 }
 
-.button-link:after {
+.button-link span {
+  background-image: linear-gradient(transparent calc(100% - 1px), var(--secondary) 1px);
+  background-repeat: no-repeat;
+  background-size: 10px 100%;
+  transition: background-size 0.25s
+}
+
+.button-link:hover span {
+  background-size: 100% 100%
+}
+
+/* .button-link:after {
   content: "";
   position: absolute;
   height: 1px;
@@ -58,7 +69,7 @@
   bottom: -0.05em;
   left: 0;
   transition: width 0.25s
-}
+} */
 
 .button-link--animate:after {
   width: 10%;

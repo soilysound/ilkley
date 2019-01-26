@@ -1,10 +1,13 @@
 (function () {
 
+  var form = document.querySelector('[data-role="join-form"]');
+  var elements = form.elements;
+  var submit = document.querySelector('[data-role="join-submit"]');
   var steps = document.querySelectorAll('[data-role="join-step"]');
   var nextsteplink = document.querySelectorAll('[data-role="join-step-next"]');
   var stepsheader = document.querySelectorAll('[data-role="join-step-header"]');
 
-  if (!steps.length) {
+  if (!form && !steps.length) {
     return;
   }
 
@@ -23,11 +26,49 @@
       var parent = this.parentNode;
       var id = parent.id;
       if (parent.getAttribute('data-complete')) {
+        location.hash = id;
         focusstep(getstep(id));
       }
 
     }
-  })
+  });
+
+  window.addEventListener('hashchange', function () {
+    focusstep(getstep(location.hash));
+  });
+
+  // control when we want to validate form elements:
+
+  // onsubmit...
+  form.onsubmit = function (event) {
+    event.preventDefault();
+    form.setAttribute('data-validate', true);
+    if (checkformvalidity()) {
+      form.submit();
+    };
+  }
+
+  //... and when te user interacts with a form elements
+  for (var i = -1; ++i < elements.length;) {
+    elements[i].onclick = function () {
+      this.setAttribute('data-validate', true);
+    }
+  }
+
+  form.onchange = function (event) {
+    event.preventDefault();
+    steps.forEach(function (step) {
+      var isvalid = true;
+      step.querySelectorAll('input, button, textarea, select').forEach(function (item) {
+        if (!item.checkValidity()) {
+          isvalid = false;
+        };
+      });
+      validstep(step, isvalid);
+    });
+
+    checkformvalidity();
+  }
 
   function getstep(id) {
 
@@ -71,11 +112,31 @@
     }
   }
 
-  window.addEventListener('hashchange', function () {
-    focusstep(getstep(location.hash));
-  });
+  function validstep(step, valid) {
+    var link = step.querySelector('[data-role="join-step-next"]');
+    if (!link) {
+      return;
+    }
 
+    if (valid) {
+      link.removeAttribute('disabled')
+    }
+    else {
+      link.setAttribute('disabled', 'disabled')
+    }
+  }
+
+  function checkformvalidity() {
+    if (form.checkValidity()) {
+      submit.removeAttribute('disabled');
+      return true;
+    }
+    else {
+      submit.disabled = 'disabled';
+      return false;
+    }
+  }
+  // enable the below if you want the form to retqain its current step when page reloaded
   // focusstep(getstep(location.hash));
 
-
-})()
+})();

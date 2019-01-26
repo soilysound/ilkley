@@ -2,7 +2,7 @@
   background-color: var(--shade-1);
   color: var(--shade-5);
   font-size: 13px;
-  border-top: 2px solid var(--secondary)
+  border-top: 2px solid var(--secondary);
 }
 
 .footer a {
