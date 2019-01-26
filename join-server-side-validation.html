@@ -143,7 +143,7 @@
             <div class="join__step-options">
               <div class="join__step-options-col">
                 <input type="radio" name="membership" value="individual" class="join__step-options-select" required
-                  data-invalid="false">
+                  data-invalid="false" checked>
                 <span>Individual</span>
                 <strong>£15</strong>
               </div>
@@ -157,11 +157,11 @@
             <a href="#" class="join__step-link button-link button-link--multiline">
               <span>Find out more about memberships and
                 benefits</span></a>
-            <a href="#join-step-2" class="join__step-next-button" data-role="join-step-next" disabled>Next</a>
+            <a href="#join-step-2" class="join__step-next-button" data-role="join-step-next">Next</a>
           </div>
         </div>
 
-        <div class="join__step" data-role="join-step" aria-hidden="true" id="join-step-2">
+        <div class="join__step" data-role="join-step" data-active id="join-step-2">
           <h3 class="join__step-header" data-role="join-step-header">Personal details</h3>
           <div class="join__step-body">
 
@@ -204,8 +204,8 @@
               <div class="join__form-row">
                 <label for="form-first-name" class="join__form-label">First Name</label>
                 <input type="text" class="join__form-input" id="form-first-name" name="first-name" required
-                  data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                  data-invalid="true">
+                <div class="join__form-validation-message" data-show="true">
                   Please enter a first name
                 </div>
               </div>
@@ -308,7 +308,7 @@
           </div>
         </div>
 
-        <div class="join__step" data-role="join-step" aria-hidden="true" id="join-step-3">
+        <div class="join__step" data-role="join-step" aria-hidden="true" data-active id="join-step-3">
           <h3 class="join__step-header" data-role="join-step-header">Address</h3>
           <div class="join__step-body">
             <fieldset class="join__form-group">

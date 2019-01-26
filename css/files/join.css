@@ -101,7 +101,9 @@
 }
 
 .join__step-options-select:checked {
-  background: var(--primary);
+  background: url(../../img/icons/icon-tick-membership.svg) var(--primary) no-repeat;
+  background-position: 10% 50%;
+  background-size: 15% auto;
   border-radius: 0
 }
 
@@ -167,9 +169,19 @@
   flex-direction: column
 }
 
-.join__form-row--columns {
-  flex-direction: row
+.join__form-row--cols {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap
 }
+
+.join__form-row--cols > * {
+  flex: 1;
+  margin-right: 0.5em
+}
+
 
 .join__form-row:last-child {
   margin-bottom: 12px
@@ -215,12 +227,29 @@
 .join__form[data-validate]
 .join__form-input:invalid,
 .join__form-input[data-validate]:invalid,
-.join__form-input:focus:invalid {
+.join__form-input:focus:invalid,
+.join__form-input[data-invalid="true"]:not(:valid) {
   border-color: crimson;
 }
 
 .join__form-input:focus:invalid {
   outline-color: crimson;
+}
+
+.join__form-validation-message {
+  padding-top: 0.75em;
+  color: crimson;
+  display: none;
+  width: 100%;
+  flex: none
+}
+
+.join__form[data-validate]
+.join__form-input[data-validate]:invalid ~
+.join__form-validation-message,
+.join__form-input:invalid ~
+.join__form-validation-message[data-show="true"] {
+  display: block
 }
 
 .join__form-input[type="radio"],
@@ -252,19 +281,9 @@
 }
 
 .join__form-input[type="text"],
-.join__form-input[type="tel"] {
+.join__form-input[type="tel"],
+.join__form-input[type="email"] {
   width: 100%;
-}
-
-.join__form-cols {
-  display: flex;
-  justify-content: space-between;
-  width: 100%
-}
-
-.join__form-cols span {
-  flex: 1;
-  margin-right: 0.5em
 }
 
 .join__payment {
@@ -274,4 +293,26 @@
   justify-content: center;
   border: 1px solid var(--shade-6);
   padding-bottom: 25%
+}
+
+.join__tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help
+}
+
+.join__tooltip:hover:after {
+  content: attr(title);
+  position: absolute;
+  background: white;
+  font-size: 13px;
+  color: inherit;
+  padding: 1em;
+  border: 1px solid var(--shade-6);
+  right: 0;
+  width: 200px;
+  max-width: 50vw;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%)
 }

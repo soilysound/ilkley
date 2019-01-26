@@ -64,7 +64,9 @@
           isvalid = false;
         };
       });
+
       validstep(step, isvalid);
+
     });
 
     checkformvalidity();
@@ -119,10 +121,12 @@
     }
 
     if (valid) {
-      link.removeAttribute('disabled')
+      link.removeAttribute('disabled');
+      step.setAttribute('data-step-is-valid', true);
     }
     else {
-      link.setAttribute('disabled', 'disabled')
+      link.setAttribute('disabled', 'disabled');
+      step.setAttribute('data-step-is-valid', false);
     }
   }
 
