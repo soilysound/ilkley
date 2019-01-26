@@ -69,6 +69,10 @@
   width: 100%;
 }
 
+.button-link--multiline:after {
+  content: none;
+}
+
 .button-link--multiline span {
   background-image: linear-gradient(transparent calc(100% - 1px), var(--secondary) 1px);
   background-repeat: no-repeat;

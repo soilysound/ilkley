@@ -17,7 +17,7 @@
       if (this.hasAttribute('disabled')) {
         return;
       }
-      focusstep(getstep(this.href));
+      focusstep(getstep(this.href), delay);
     }
   });
 
@@ -26,7 +26,6 @@
       var parent = this.parentNode;
       var id = parent.id;
       if (parent.getAttribute('data-complete')) {
-        location.hash = id;
         focusstep(getstep(id));
       }
 
@@ -87,7 +86,7 @@
     }
   }
 
-  function focusstep(step) {
+  function focusstep(step, delay) {
 
     if (step === -1) {
       return;
