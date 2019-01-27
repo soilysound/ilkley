@@ -24,6 +24,10 @@ body {
   margin-bottom: calc(var(--vw) * 7)
 }
 
+.site-body--flush {
+  padding-top: 0;
+}
+
 .block {
   margin-bottom: calc(20px + var(--vw) * 3.9)
 }

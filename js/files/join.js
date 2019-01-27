@@ -17,7 +17,7 @@
       if (this.hasAttribute('disabled')) {
         return;
       }
-      focusstep(getstep(this.href), delay);
+      focusstep(getstep(this.href));
     }
   });
 
@@ -86,7 +86,7 @@
     }
   }
 
-  function focusstep(step, delay) {
+  function focusstep(step) {
 
     if (step === -1) {
       return;
