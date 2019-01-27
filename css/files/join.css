@@ -135,19 +135,8 @@
 }
 
 .join__step-next-button {
-  display: block;
-  width: 100%;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 14px;
-  background: var(--primary);
   color: white;
-  letter-spacing: 2px;
-  font-weight: 600;
-  border: 0;
-  cursor: pointer;
-  line-height: 1;
-  padding: calc(8px + var(--vw) * 1.3);
+  background: var(--primary);
 }
 
 .join__step-next-button[disabled] {
@@ -229,16 +218,17 @@
 .join__form-input[data-validate]:invalid,
 .join__form-input:focus:invalid,
 .join__form-input[data-invalid="true"]:not(:valid) {
-  border-color: crimson;
+  border-color: var(--alert);
+  color: var(--alert)
 }
 
 .join__form-input:focus:invalid {
-  outline-color: crimson;
+  outline-color: var(--alert);
 }
 
 .join__form-validation-message {
   padding-top: 0.75em;
-  color: crimson;
+  color: var(--alert);
   display: none;
   width: 100%;
   flex: none

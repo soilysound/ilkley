@@ -72,7 +72,6 @@
   margin-bottom: calc(12px + var(--vw));
   font-size: 14px;
   padding: calc(24px + var(--vw) * 2);
-  padding-bottom: 0;
   line-height: 1.1;
   box-shadow: 0 0 9px rgba(252, 191, 191, 0.04)
 }
@@ -82,8 +81,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: calc(18px + var(--vw)) 0 calc(20px + var(--vw));
+  padding: calc(18px + var(--vw)) 0 0;
   color: var(--primary);
+  margin-bottom: -12px;
   line-height: 1.6
 }
 
@@ -97,7 +97,9 @@
 }
 
 .member__activity {
-  padding: 0
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .member__activity-grid {
@@ -141,9 +143,45 @@
 .member__rides-entry[class] {
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: calc(16px + var(--vw) * 0.75);
+  font-size: calc(16px + var(--vw) * 0.7);
 }
 
 .member__rides-entry[href] {
   color: var(--primary)
+}
+
+.member__card-profile-row:not(:last-child) {
+  margin-bottom: calc(20px + var(--vw) * 2)
+}
+
+.member__card-profile-input {
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: calc(16px + var(--vw) * 0.7);
+  padding: 0.5em 0;
+  border: 0;
+  color: var(--shade-3);
+  border-bottom: 1px solid var(--shade-5);
+  width: 100%;
+  font-family: inherit
+}
+
+textarea.member__card-profile-input {
+  font-size: calc(13px + var(--vw) * 0.4);
+  line-height: 1.45;
+}
+
+.member__card-profile-input[data-invalid="true"] {
+  border-color: var(--alert);
+  color: var(--alert);
+}
+
+.member__card-sub-header + 
+.member__card-profile-input {
+  margin-top: -6px;
+}
+
+.member__card-profile-submit {
+  color: white;
+  background: var(--primary)
 }

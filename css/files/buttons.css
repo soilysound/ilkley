@@ -82,3 +82,17 @@
 .button-link--multiline:hover span {
   background-size: 100% 100%
 }
+
+.button--large {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  line-height: 1;
+  padding: calc(8px + var(--vw) * 1.3);
+}
