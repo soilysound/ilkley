@@ -172,7 +172,7 @@
                   <option value="mr">Mr</option>
                   <option value="mrs">Mrs</option>
                 </select>
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a title
                 </div>
               </div>
@@ -196,7 +196,7 @@
                     <label for="form-gender-3">Other</label>
                   </span>
                 </div>
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a gender
                 </div>
               </div>
@@ -205,7 +205,7 @@
                 <label for="form-first-name" class="join__form-label">First Name</label>
                 <input type="text" class="join__form-input" id="form-first-name" name="first-name" required
                   data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a first name
                 </div>
               </div>
@@ -213,7 +213,7 @@
               <div class=" join__form-row">
                 <label for="form-last-name" class="join__form-label">Last Name</label>
                 <input type="text" class="join__form-input" id="form-last-name" name="last-name" required data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a last name
                 </div>
               </div>
@@ -222,7 +222,7 @@
                 <label for="form-display-name" class="join__form-label">Display Name</label>
                 <input type="text" class="join__form-input" id="form-display-name" name="display-name" required
                   data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a display name
                 </div>
               </div>
@@ -231,7 +231,7 @@
                 <label for="form-dob" class="join__form-label">Date of Birth <span>(dd/mm/yyyy)</span></label>
                 <input type="text" class="join__form-input" id="form-dob" name="dob" required data-invalid="false"
                   pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="dd/mm/yyyy">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a date of birth
                 </div>
               </div>
@@ -239,7 +239,7 @@
               <div class="join__form-row">
                 <label for="form-email" class="join__form-label">Email</label>
                 <input type="email" class="join__form-input" id="form-email" name="email" required data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a valid email address
                 </div>
               </div>
@@ -248,7 +248,7 @@
                 <label for="form-confirm-email" class="join__form-label">Confirm email</label>
                 <input type="email" class="join__form-input" id="form-confirm-email" name="confirm-email" required
                   data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Confirm email does not match
                 </div>
               </div>
@@ -257,7 +257,7 @@
                 <label for="form-phone-number" class="join__form-label">Phone number</label>
                 <input type="tel" class="join__form-input" id="form-phone-number" name="phone-number" required
                   data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a phone number
                 </div>
               </div>
@@ -266,7 +266,7 @@
                 <label for="form-password" class="join__form-label">Password</label>
                 <input type="password" class="join__form-input" id="form-password" name="password" required
                   data-invalid="false" pattern="[a-zA-z0-9]{5,10}">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a password between 5 and 10 characters
                 </div>
               </div>
@@ -275,7 +275,7 @@
                 <label for="form-confirm-password" class="join__form-label">Confirm password</label>
                 <input type="password" class="join__form-input" id="form-confirm-password" name="confirm-password"
                   required data-invalid="false" pattern="[a-zA-z0-9]{5,10}">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Confirm password must match
                 </div>
               </div>
@@ -286,7 +286,7 @@
                     card)</span></label>
                 <input type="text" class="join__form-input" id="form-emergency-name" name="emergency-name" required
                   data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a contact name
                 </div>
               </div>
@@ -297,7 +297,7 @@
                     on
                     members card)</span></label>
                 <input type="tel" class="join__form-input" id="form-emergency-contact" required data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a contact number
                 </div>
               </div>
@@ -320,7 +320,7 @@
                   </span>
                   <span><button class="join__form-input join__step-next-button button--large" disabled>Find address</button></span>
                 </div>
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a valid postcode
                 </div>
               </div>
@@ -337,7 +337,7 @@
                 </label>
                 <input type="text" class="join__form-input" id="form-address-line-1" name="address-line-1" required
                   data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter an address
                 </div>
               </div>
@@ -352,7 +352,7 @@
                 <label for="form-town-city" class="join__form-label">Town / City
                 </label>
                 <input type="text" class="join__form-input" id="form-town-city" name="town-city" required data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a town/city
                 </div>
               </div>
@@ -361,7 +361,7 @@
                 <label for="form-county" class="join__form-label">County
                 </label>
                 <input type="text" class="join__form-input" id="form-county" name="county" required data-invalid="false">
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please enter a county
                 </div>
               </div>
@@ -389,7 +389,7 @@
               <div class="join__form-row join__form-row--cols">
                 <input type="checkbox" class="join__form-input" id="form-auto-renewels" name="auto-renewels">
                 <label for="form-auto-renewels" class="">I’d like to turn auto renewals on <span class="join__tooltip"
-                    title="Explain what this means here">?</span>
+                    data-title="Explain what this means here">?</span>
                 </label>
               </div>
               <div class="join__form-row join__form-row--cols">
@@ -406,7 +406,7 @@
                   that you agree to our terms
                   &amp; conditions along with our Ride Etiquette
                 </label>
-                <div class="join__form-validation-message" data-show="false">
+                <div class="join__form-validation-message" aria-hidden="true">
                   Please agree to the terms and conditions
                 </div>
               </div>
