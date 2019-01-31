@@ -117,7 +117,7 @@
   font-size: 14px;
   padding: calc(24px + var(--vw) * 2);
   line-height: 1.1;
-  box-shadow: 0 0 10px rgba(252, 191, 191, 0.06)
+  box-shadow: 0 2px 10px rgba(252, 191, 191, 0.06)
 }
 
 .member__card-footer {
@@ -217,7 +217,27 @@
   font-family: inherit
 }
 
-textarea.member__card-profile-input {
+.member__card-profile-input--message[class] {
+  border: 1px solid var(--shade-6);
+  padding: 0.5em;
+  margin: 0.5em 0!important
+}
+
+.member__card-profile-input:not(input):not(textarea){
+  border-bottom: 0;
+  padding-top: 0.25em;
+}
+
+.member__card-profile-input a {
+  color: var(--primary);
+}
+
+.member__card-profile-input em {
+  color: var(--shade-4)
+}
+
+textarea.member__card-profile-input,
+.member__card-profile-input--text {
   font-size: calc(13px + var(--vw) * 0.4);
   line-height: 1.45;
 }
@@ -228,7 +248,7 @@ textarea.member__card-profile-input {
 
 .member__card-sub-header + 
 .member__card-profile-input {
-  margin-top: -6px;
+  margin-top: -5px;
 }
 
 .member__card-profile-submit {

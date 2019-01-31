@@ -32,6 +32,6 @@ body {
   padding-top: 0;
 }
 
-.block {
+.block[class] {
   margin-bottom: calc(20px + var(--vw) * 3.9)
 }

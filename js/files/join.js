@@ -1,6 +1,9 @@
 (function () {
 
   var form = document.querySelector('[data-role="join-form"]');
+  if (!form) {
+    return;
+  }
   var elements = form.elements;
   var submit = document.querySelector('[data-role="join-submit"]');
   var steps = document.querySelectorAll('[data-role="join-step"]');
