@@ -1,0 +1,60 @@
+.table {
+  border: 0;
+  width: 100%;
+  border-spacing: 0;
+  overflow: hidden;
+  position: relative;
+  font-size: calc(12px + var(--vw) * 0.4);
+  padding: 0 2rem;
+  position: relative;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  color: inherit;
+  padding: 1rem 0.5rem;
+  background: linear-gradient(var(--shade-6) 0, var(--shade-6) 100%) no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  white-space: nowrap;
+}
+
+.table th {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75em;
+  color: var(--shade-4);
+  font-weight: 600;
+  padding: 1rem 0.5rem 0.9rem;
+  background: none
+}
+
+.table th {
+  position: relative;
+}
+
+.table th:first-child:after {
+  content: "";
+  position: absolute;
+  width: 200vw;
+  left: -50vw;
+  bottom: 0;
+  height:1px;
+  background:var(--secondary);
+}
+
+.table th:first-child,
+.table td:first-child {
+  padding-left: 0
+}
+
+.table th:last-child,
+.table td:last-child {
+  padding-right: 0
+}
+
+.table__col-push-1[class] {
+  width: 50%;
+  text-align: left
+}

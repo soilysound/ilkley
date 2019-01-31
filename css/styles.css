@@ -19,6 +19,7 @@
 @import "files/localnav.css";
 @import "files/join.css";
 @import "files/member.css";
+@import "files/table.css";
 
 /* include this file last */
 @import "files/skin.css";

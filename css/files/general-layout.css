@@ -7,7 +7,7 @@ body {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 calc(19px + (var(--vw) * 2));
+  padding: 0 calc(16px + (var(--vw) * 2));
 }
 
 .wrapper--full-width {
@@ -16,7 +16,11 @@ body {
 
 .wrapper--narrow[class] {
   max-width: 640px;
-} 
+}
+
+.wrapper--mid-narrow[class] {
+  max-width: 800px;
+}
 
 .site-body {
   min-height: 60vh;
