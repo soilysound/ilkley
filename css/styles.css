@@ -20,6 +20,7 @@
 @import "files/join.css";
 @import "files/member.css";
 @import "files/table.css";
+@import "files/section.css";
 
 /* include this file last */
 @import "files/skin.css";
