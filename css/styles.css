@@ -21,6 +21,7 @@
 @import "files/member.css";
 @import "files/table.css";
 @import "files/section.css";
+@import "files/rides.css";
 
 /* include this file last */
 @import "files/skin.css";

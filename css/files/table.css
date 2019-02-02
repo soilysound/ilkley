@@ -16,6 +16,7 @@
   border: 0;
   width: 100%;
   border-spacing: 0;
+  border-collapse: collapse;
   overflow: hidden;
   position: relative;
   font-size: calc(13px + var(--vw) * 0.3);
@@ -76,4 +77,59 @@
 .table__col-push-1[class] {
   width: 100%;
   text-align: left
+}
+
+.table__col-push-2[class] {
+  width: 50%;
+  text-align: left
+}
+
+.table__col-push-3[class] {
+  width: 33%;
+  text-align: left
+}
+
+.table__col-push-4[class] {
+  width: 25%;
+  text-align: left
+}
+
+.table--dark {
+  padding: 0
+}
+
+.table--dark th,
+.table--dark th:after {
+  content: none!important;
+  color: var(--secondary);
+}
+
+.table--dark td,
+.table--dark th {
+  background: 0;
+  border-bottom: 1px solid var(--shade-3)
+}
+
+.table__section-header th {
+  color: var(--shade-5);
+  text-transform: none;
+  text-align: left;
+  font-size: inherit;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.table__cta-link {
+  display: block;
+  color: var(--shade-5);
+  background: url(../../img/icons/icon-right-arrow.svg) no-repeat;
+  background-size: auto 70%;
+  background-position: right 50%;
+  padding: 0 0.7em;
+  position: sticky;
+  right:0
+}
+
+.table__cta-link span {
+  display: none;
 }

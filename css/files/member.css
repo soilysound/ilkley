@@ -1,5 +1,5 @@
 .member__header {
-  background: black;
+  background: var(--shade-0);
   color: white;
   padding: calc(24px + var(--vw) * 2) 0
 }

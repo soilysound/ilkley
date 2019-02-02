@@ -180,7 +180,7 @@
   display: block;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 13px;
+  font-size: calc(10px + var(--vw) * 0.4);
   color: var(--shade-4);
   font-weight: 600;
   margin-bottom: 0.75em
