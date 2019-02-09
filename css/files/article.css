@@ -1,3 +1,7 @@
+.article {
+  color: var(--shade-3)
+}
+
 .article__wrapper {
   max-width: 600px;
   margin-left: auto;
@@ -15,16 +19,17 @@
 }
 
 .article__headline {
-  font-weight: 200;
-  font-size: calc(16px + (var(--vw) * 3));
+  font-weight: 300;
+  font-size: calc(22px + var(--vw) * 2);
   line-height: 1.2;
   margin-bottom: 2rem;
 }
 
 .article__byline {
   display: flex;
-  font-size: 16px;
+  font-size: calc(12px + var(--vw) * 0.4);
   margin-top: -1em;
+  color: var(--shade-4)
 }
 
 .article__byline > time {
@@ -61,6 +66,8 @@
 }
 
 .article__caption {
-  font-size: 14px;
-  text-align: center
+  font-size: calc(12px + var(--vw) * 0.4);
+  text-align: center;
+  color: var(--shade-4)
+
 }

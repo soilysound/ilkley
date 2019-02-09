@@ -73,7 +73,7 @@
   font-size: 14px;
   padding: calc(24px + var(--vw) * 2);
   line-height: 1.1;
-  box-shadow: 0 2px 10px rgba(252, 191, 191, 0.06)
+  box-shadow: 0 6px 10px rgba(252, 191, 191, 0.06)
 }
 
 .member__card-footer {

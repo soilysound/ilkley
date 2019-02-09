@@ -32,11 +32,17 @@ body {
   padding-top: 0;
 }
 
-.site-body--dark {
+.site-body--dark,
+.site-body--light {
   background: var(--shade-0);
   color: var(--highlight);
   margin: 0;
   padding-bottom: calc(var(--vw) * 5);
+}
+
+.site-body--light {
+  background: white;
+  color: inherit
 }
 
 .block[class] {
