@@ -208,6 +208,13 @@
   vertical-align: middle
 }
 
+select.join__form-input {
+  background: url(../../img/icons/icon-down-arrow-dark.svg) white no-repeat;
+  background-position: right 12px top 50%;
+  background-size: auto 35%;
+  width: 100%;
+}
+
 .join__form-input[disabled]{
   color: white;
   background: var(--shade-6)

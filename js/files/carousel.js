@@ -29,7 +29,8 @@
 
       if (width !== offset) {
         offset = width;
-        rail.style.cssText = "--offset: " + offset + "px";
+        rail.firstElementChild.style.cssText = "width: " + offset + "px";
+        rail.lastElementChild.style.cssText = "width: " + offset + "px";
       }
 
       for (var i = -1; ++i < slides.length;) {
