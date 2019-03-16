@@ -44,7 +44,7 @@
   border: 0;
   -webkit-appearance: none;
   appearance: none;
-  background: url(/img/icons/icon-play.svg) no-repeat center var(--primary);
+  background: url(../../img/icons/icon-play.svg) no-repeat center var(--primary);
   background-size: 38%
 }
 
@@ -59,7 +59,7 @@
 }
 
 .rides-app__control[data-type="pause"]{
-  background-image: url(/img/icons/icon-pause.svg) 
+  background-image: url(../../img/icons/icon-pause.svg) 
 }
 
 .rides-app__note {
