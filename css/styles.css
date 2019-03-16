@@ -23,6 +23,7 @@
 @import "files/section.css";
 @import "files/rides.css";
 @import "files/news.css";
+@import "files/rides-app.css";
 
 /* include this file last */
 @import "files/skin.css";

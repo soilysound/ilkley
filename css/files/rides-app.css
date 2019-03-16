@@ -1,0 +1,123 @@
+.rides-app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--shade-0);
+  overflow: auto;
+  overscroll-behavior: contain;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 calc(12px + var(--vw) * 2)
+}
+
+.rides-app__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: calc(18px + var(--vw) * 2.5)
+}
+
+.rides-app__title span {
+  color: var(--secondary);
+  display: block;
+  font-size: 0.6em;
+}
+
+
+.rides-app__controls {
+  min-height: 55%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: calc(30px + var(--vw) * 6) 0
+}
+
+.rides-app__control {
+  width: calc(100px + var(--vw) * 5);
+  border-radius: 50%;
+  border: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url(/img/icons/icon-play.svg) no-repeat center var(--primary);
+  background-size: 38%
+}
+
+.rides-app__control:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%
+}
+
+.rides-app__control[data-type="play"]{
+  background-position: 60% center
+}
+
+.rides-app__control[data-type="pause"]{
+  background-image: url(/img/icons/icon-pause.svg) 
+}
+
+.rides-app__note {
+  text-transform: uppercase;
+  text-emphasis: center;
+  font-weight: 600;
+  font-size: calc(16px + var(--vw) * 0.8);
+  letter-spacing: 2px;
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.rides-app__note .icon {
+  margin-right: 0.25em;
+  height: 1em;
+}
+
+.rides-app__links > a {
+  margin: 0 0.5em 0 0
+}
+
+.rides-app__links > a + a {
+  margin: 0 0 0 0.5em
+}
+
+.rides-app__alert {
+  background: var(--alert);
+  color: white;
+  font-size: calc(18px);
+  text-align: center;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.rides-app__help {
+  text-align: center;
+}
+
+.rides-app__help[aria-hidden="true"]{
+  display: none
+}
+
+.rides-app__help h4 {
+  font-size: calc(22px + var(--vw));
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: var(--shade-0);
+}
+
+.rides-app__help p {
+  font-size: 16px;
+  margin-bottom: 2em;
+  color: var(--shade-4);
+}
