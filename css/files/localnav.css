@@ -18,9 +18,9 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  width: 1px;
+  width: 100%;
   width: min-content;
-  scroll-snap-align: start
+  scroll-snap-align: start;
 }
 
 .localnav__item:not(:last-child) {

@@ -1,5 +1,7 @@
 (function () {
 
+  NodeList.prototype.forEach = Array.prototype.forEach;
+
   var sitenav = document.querySelector('[data-role="site-nav"]');
   var sitenavopen = document.querySelector('[data-role="site-nav-open"]');
   var sitenavclose = document.querySelector('[data-role="site-nav-close"]');

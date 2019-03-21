@@ -9,6 +9,7 @@
 
 .feature-promo__body {
   display: flex;
+  align-items: center
 }
 
 .feature-promo__col-1,
@@ -21,7 +22,7 @@
 
 .feature-promo__col-1 {
   padding: 0 1em 0 0;
-  align-items: flex-start
+  /* align-items: flex-start */
 }
 
 .feature-promo__col-2 {
@@ -49,7 +50,8 @@
 }
 
 .feature-promo__image {
-  width: 50%;
+  height: calc(190px + var(--vw) * 10);
+  /* width: 50%; */
 }
 
 /* shaded tiles*/

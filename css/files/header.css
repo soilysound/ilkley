@@ -46,12 +46,13 @@
 
 .header__site-logo {
   height: calc(23px + var(--vw) * 2.5);
-  width: auto;
-  display: block
+  width: 100%;
+  display: block;
 }
 
 .header__site-logo-link {
-  display: block
+  display: block;
+  width: 100%;
 }
 
 

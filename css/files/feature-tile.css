@@ -8,7 +8,7 @@
 }
 
 .feature-tile__item {
-  width: 50%;
+  width: calc(50% - 12px);
   margin: 6px;
   display: flex;
   flex-direction: column-reverse
