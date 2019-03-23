@@ -2,24 +2,22 @@
 .section-header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   margin-top: -0.2em;
   margin-bottom: calc(18px + var(--vw) * 1.6);
   font-size: calc(22px + var(--vw) * 1.4);
   font-weight: 400;
-  line-height: 1.1
+  line-height: 1.1;
 }
 
 .section-header > *:first-child:not(:only-child) {
-  flex: 10;
   white-space: nowrap;
   padding-right: 1em;
   padding: 0.2em 1em 0.2em 0;
+  margin-right: auto;
 }
 
 .section-header > *:last-child {
-  flex: 1;
   padding: 0.2em 0;
   display: flex;
   align-items: center

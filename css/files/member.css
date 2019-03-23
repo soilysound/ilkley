@@ -229,25 +229,22 @@ textarea.member__card-profile-input,
   display: flex;
 }
 
-.member__user > * {
-  flex: 1;
-}
-
 .member__user-figure {
   display: flex;
   flex-direction: column;
+  flex: 1
 }
 
 .member__user-image {
   flex: 1;
   position: relative;
-  padding-bottom: 56.25%
+  padding-bottom: 56.25%;
 }
 
 .member__user-image > img {
   width: 100%;
   position: absolute;
-  display: block
+  display: block;
 }
 
 @supports(object-fit: contain){

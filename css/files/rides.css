@@ -167,7 +167,8 @@
   background: none;
   border: 0;
   z-index: 2;
-  cursor: pointer
+  cursor: pointer;
+  opacity: 0
 } 
 
 .rides__input-option > input:checked + span {
